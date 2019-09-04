@@ -1,6 +1,6 @@
 import cv2
 
-cap = cv2.VideoCapture('https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4')
+cap = cv2.VideoCapture('E:/work/big_buck_bunny_720p_1mb.mp4')
 
 while(cap.isOpened()):
     ret, frame = cap.read()
@@ -9,5 +9,6 @@ while(cap.isOpened()):
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+        
 cap.release()  
 cv2.destroyAllWindows()
